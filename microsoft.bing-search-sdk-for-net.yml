@@ -11,12 +11,11 @@ pool:
 
 variables:
   project: '**/*.csproj'
-  testProjects: '**/*Tests/*.csproj'
   buildConfiguration: 'Release'
 
 jobs:
-- job: 'BuildAndTest'
-  displayName: 'Build and Test'
+- job: 'Build'
+  displayName: 'Build'
   steps:
   - task: NuGetToolInstaller@1
 
@@ -36,11 +35,4 @@ jobs:
     inputs:
       command: build
       projects: $(project)
-      configuration: '$(buildConfiguration)'
-
-  - task: DotNetCoreCLI@2
-    displayName: 'Run Unit Tests'
-    inputs:
-      command: test
-      projects: $(testProjects)
       configuration: '$(buildConfiguration)'
