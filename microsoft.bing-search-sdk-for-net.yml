@@ -1,0 +1,46 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  project: '**/*.csproj'
+  testProjects: '**/*Tests/*.csproj'
+  buildConfiguration: 'Release'
+
+jobs:
+- job: 'BuildAndTest'
+  displayName: 'Build and Test'
+  steps:
+  - task: NuGetToolInstaller@1
+
+  - task: NuGetCommand@2
+    displayName: 'Restore NuGet'
+    inputs:
+      restoreSolution: '$(solution)'
+
+  - task: UseDotNet@2
+    displayName: 'Set .net Core Version'
+    inputs:
+      version: '2.1.x'
+      packageType: runtime
+
+  - task: DotNetCoreCLI@2
+    displayName: 'Build Projects'
+    inputs:
+      command: build
+      projects: $(project)
+      configuration: '$(buildConfiguration)'
+
+  - task: DotNetCoreCLI@2
+    displayName: 'Run Unit Tests'
+    inputs:
+      command: test
+      projects: $(testProjects)
+      configuration: '$(buildConfiguration)'
