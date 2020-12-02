@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.8" />
+    <PackageReference Include="Microsoft.Rest.ClientRuntime" Version="2.3.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Samples\TestImages\**" />
+    <EmbeddedResource Remove="Samples\TestImages\**" />
+    <None Remove="Samples\TestImages\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Bing.Search.AutoSuggest">
+      <HintPath>..\..\..\sdk\AutoSuggest\src\bin\Debug\netstandard2.0\Microsoft.Bing.Search.AutoSuggest.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bing.Search.CustomWebSearch">
+      <HintPath>..\..\..\sdk\CustomWebSearch\src\bin\Debug\netstandard2.0\Microsoft.Bing.Search.CustomWebSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bing.Search.EntitySearch">
+      <HintPath>..\..\..\sdk\EntitySearch\src\bin\Debug\netstandard2.0\Microsoft.Bing.Search.EntitySearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bing.Search.ImageSearch">
+      <HintPath>..\..\..\sdk\ImageSearch\src\bin\Debug\netstandard2.0\Microsoft.Bing.Search.ImageSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bing.Search.NewsSearch">
+      <HintPath>..\..\..\sdk\NewsSearch\src\bin\Debug\netstandard2.0\Microsoft.Bing.Search.NewsSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bing.Search.SpellCheck">
+      <HintPath>..\..\..\sdk\SpellCheck\src\bin\Debug\netstandard2.0\Microsoft.Bing.Search.SpellCheck.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bing.Search.VideoSearch">
+      <HintPath>..\..\..\sdk\VideoSearch\src\bin\Debug\netstandard2.0\Microsoft.Bing.Search.VideoSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bing.Search.VisualSearch">
+      <HintPath>..\..\..\sdk\VisualSearch\src\bin\Debug\netstandard2.0\Microsoft.Bing.Search.VisualSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bing.Search.WebSearch">
+      <HintPath>..\..\..\sdk\WebSearch\src\bin\Debug\netstandard2.0\Microsoft.Bing.Search.WebSearch.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Rest.ClientRuntime" Version="2.3.22" />
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+	</ItemGroup>
+	<ItemGroup>
+		<ReferencePath Include="@(ReferenceDependencyPaths)">
+		</ReferencePath>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="TestImages\*.jpg">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+</Project>
