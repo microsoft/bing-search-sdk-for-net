@@ -10,8 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\sdk\AutoSuggest\src\Microsoft.Bing.Search.AutoSuggest.csproj" />
-    <ProjectReference Include="..\common\Common\Common.csproj" />
+    <ProjectReference Include="..\..\..\..\sdk\ImageSearch\src\Microsoft.Bing.Search.ImageSearch.csproj" />
+    <ProjectReference Include="..\..\common\Common\Common.csproj" />
   </ItemGroup>
 
 </Project>

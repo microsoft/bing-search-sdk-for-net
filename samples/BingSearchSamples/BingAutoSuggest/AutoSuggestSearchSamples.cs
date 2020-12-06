@@ -1,8 +1,18 @@
 ﻿namespace bing_search_dotnet.Samples
 {
     using System;
-    using Microsoft.Azure.CognitiveServices.Search.AutoSuggest;
-    using Microsoft.Azure.CognitiveServices.Search.AutoSuggest.Models;
+    using Microsoft.Bing.AutoSuggest;
+    using Microsoft.Bing.AutoSuggest.Models;
+    using Microsoft.Rest;
+    using Microsoft.Rest.Serialization;
+    using Newtonsoft.Json;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Net;
+    using System.Net.Http;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using global::Credentials;
 
     [SampleCollection("AutoSuggestSearch")]
     public class AutoSuggestSearchSamples
@@ -10,7 +20,7 @@
         [Example("This will request suggestions (Satya Nadella) and print out content about them")]
         public static void AutoSuggestLookup(string subscriptionKey)
         {
-            var client = new AutoSuggestSearchAPI(new ApiKeyServiceClientCredentials(subscriptionKey));
+            var client = new AutoSuggestClient(new ClientCredentials(subscriptionKey));
 
             try
             {
@@ -44,7 +54,7 @@
         [Example("This triggers a bad request and shows how to read the error response")]
         public static void Error(string subscriptionKey)
         {
-            var client = new AutoSuggestSearchAPI(new ApiKeyServiceClientCredentials(subscriptionKey + "1"));
+            var client = new AutoSuggestClient(new ClientCredentials(subscriptionKey + "1"));
 
             try
             {
