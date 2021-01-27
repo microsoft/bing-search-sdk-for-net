@@ -35,7 +35,7 @@ namespace Microsoft.Bing.EntitySearch.Models
         /// to if you display the item.</param>
         /// <param name="webSearchUrl">The URL To Bing's search result for this
         /// item.</param>
-        public Places(IList<Thing> value, string _type = default(string), string id = default(string), IList<ContractualRulesContractualRule> contractualRules = default(IList<ContractualRulesContractualRule>), string webSearchUrl = default(string), QueryContext queryContext = default(QueryContext))
+        public Places(IList<Place> value, string _type = default(string), string id = default(string), IList<ContractualRulesContractualRule> contractualRules = default(IList<ContractualRulesContractualRule>), string webSearchUrl = default(string), QueryContext queryContext = default(QueryContext))
             : base(_type, id, contractualRules, webSearchUrl, queryContext)
         {
             Value = value;
@@ -52,7 +52,7 @@ namespace Microsoft.Bing.EntitySearch.Models
         /// hotels.
         /// </summary>
         [JsonProperty(PropertyName = "value")]
-        public IList<Thing> Value { get; set; }
+        public IList<Place> Value { get; set; }
 
         /// <summary>
         /// Validate the object.

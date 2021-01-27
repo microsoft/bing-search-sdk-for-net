@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Bing.Search.AutoSuggest", "Microsoft.Bing.Search.AutoSuggest.csproj", "{05FC1550-4963-4D20-801B-E93980CB65C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bing.Search.AutoSuggest", "Microsoft.Bing.Search.AutoSuggest.csproj", "{05FC1550-4963-4D20-801B-E93980CB65C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bing.Search.BingAutoSuggest.Tests", "..\test\Microsoft.Bing.Search.BingAutoSuggest.Tests.csproj", "{6AAC44AC-9C44-4D52-A809-EEA666CEC594}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{05FC1550-4963-4D20-801B-E93980CB65C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05FC1550-4963-4D20-801B-E93980CB65C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05FC1550-4963-4D20-801B-E93980CB65C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AAC44AC-9C44-4D52-A809-EEA666CEC594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AAC44AC-9C44-4D52-A809-EEA666CEC594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AAC44AC-9C44-4D52-A809-EEA666CEC594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AAC44AC-9C44-4D52-A809-EEA666CEC594}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

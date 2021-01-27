@@ -12,7 +12,7 @@
     using System.Net.Http;
     using System.Threading;
     using System.Threading.Tasks;
-    using global::Credentials;
+    using Credentials;
 
     [SampleCollection("AutoSuggestSearch")]
     public class AutoSuggestSearchSamples

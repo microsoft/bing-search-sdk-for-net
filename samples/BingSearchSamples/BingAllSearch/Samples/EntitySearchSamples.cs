@@ -100,7 +100,7 @@
             }
         }
 
-        [Example("This will look up a single restaurant (john howie bellevue) and print out its phone number")]
+        [Example("This will look up a single restaurant (john howie bellevue) and print out its Telephone")]
         public static void RestaurantLookup(string subscriptionKey)
         {
             var client = new EntitySearchClient(new ClientCredentials(subscriptionKey));
@@ -117,7 +117,7 @@
 
                     if (restaurant != null)
                     {
-                        Console.WriteLine("Searched for \"John Howie Bellevue\" and found a restaurant with this phone number:");
+                        Console.WriteLine("Searched for \"John Howie Bellevue\" and found a restaurant with this Telephone:");
                         Console.WriteLine(restaurant.Telephone);
                     }
                     else

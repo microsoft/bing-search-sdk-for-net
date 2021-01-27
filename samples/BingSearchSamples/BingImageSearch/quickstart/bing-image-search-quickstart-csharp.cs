@@ -1,7 +1,8 @@
 using System;
 using System.Linq;
-using Microsoft.Azure.CognitiveServices.Search.ImageSearch;
-using Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models;
+using Microsoft.Bing.ImageSearch;
+using Microsoft.Bing.ImageSearch.Models;
+using Credentials;
 
 namespace bing_search_dotnet
 {
@@ -10,14 +11,14 @@ namespace bing_search_dotnet
  
         static void Main(string[] args)
         {
-            //IMPORTANT: replace this variable with your Cognitive Services subscription key.
+            //IMPORTANT: replace this variable with your Bing search subscription key.
             string subscriptionKey = "ENTER YOUR KEY HERE";
             // the image search term used in the query
             string searchTerm = "canadian rockies";
             //initialize the client
             //NOTE: If you're using version 1.2.0 or below for the Bing Image Search client library, 
             // use ImageSearchAPI() instead of ImageSearchClient() to initialize your search client.
-            var client = new ImageSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
+            var client = new ImageSearchClient(new ClientCredentials(subscriptionKey));
 
             Console.WriteLine("This application will send an HTTP request to the Bing Image Search API for {0} and print the response.", searchTerm);
 
