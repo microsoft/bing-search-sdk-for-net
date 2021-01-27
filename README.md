@@ -1,14 +1,33 @@
 # Project
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+# Bing Search SDK for.NET
 
-As the maintainer of this project, please make a few updates:
+[![Packages](https://img.shields.io/badge/packages-latest-blue.svg)](https://azure.github.io/azure-sdk/releases/latest/dotnet.html) [![Dependencies](https://img.shields.io/badge/dependency-report-blue.svg)](https://azuresdkartifacts.blob.core.windows.net/azure-sdk-for-net/dependencies/dependencies.html) [![Dependencies Graph](https://img.shields.io/badge/dependency-graph-blue.svg)](https://azuresdkartifacts.blob.core.windows.net/azure-sdk-for-net/dependencies/InterdependencyGraph.html)
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+This repository is for active development of the Azure SDK for .NET. For consumers of the SDK we recommend visiting our [public developer docs](https://docs.microsoft.com/dotnet/azure/) or our versioned [developer docs](https://github.com/microsoft/bing-search-sdk-for-net).
+
+This repository is for active development of the Bing Api SDK for .NET. 
+
+## Getting started
+
+To get started with a library, see the README.md file located in the library's project folder. You can find these library folders grouped by service in the /sdk directory.
+
+For tutorials, samples, quick starts, and other documentation, go to [Azure for .NET Developers](https://docs.microsoft.com/dotnet/azure/
+
+
+## Need help?
+
+* For reference documentation visit the [Azure SDK for .NET API Reference](https://aka.ms/net-docs).
+* For tutorials, samples, quick starts, and other documentation, go to [Azure for .NET Developers](https://docs.microsoft.com/dotnet/azure/).
+* File an issue via [Github Issues](https://github.com/Azure/azure-sdk-for-net/issues/new/choose).
+* Check [previous questions](https://stackoverflow.com/questions/tagged/azure+.net) or ask new ones on StackOverflow using `azure` and `.net` tags.
+
+## Navigating the repository
+
+### Master branch
+
+The master branch has the most recent code with new features and bug fixes. 
+
 
 ## Contributing
 
