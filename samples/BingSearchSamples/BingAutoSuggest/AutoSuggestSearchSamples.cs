@@ -1,4 +1,4 @@
-﻿namespace bing_search_dotnet.Samples
+﻿namespace Microsoft.Bing.Autosuggest.Samples.Samples
 {
     using System;
     using Microsoft.Bing.AutoSuggest;

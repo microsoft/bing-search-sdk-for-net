@@ -1,4 +1,4 @@
-﻿namespace bing_search_dotnet
+﻿namespace Microsoft.Bing.EntitySearch.Samples
 {
     using System;
 

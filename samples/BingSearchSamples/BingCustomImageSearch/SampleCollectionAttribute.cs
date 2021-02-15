@@ -1,4 +1,4 @@
-﻿namespace bing_search_dotnet
+﻿namespace Microsoft.Bing.CustomImageSearch.Samples
 {
     using System;
 

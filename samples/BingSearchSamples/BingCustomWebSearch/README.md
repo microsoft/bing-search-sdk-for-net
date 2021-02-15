@@ -26,12 +26,12 @@ This example provides sample usecases of the the [Bing Custom Search v7](https:/
 To get the Bing Custom Search sample running locally, follow these steps:
 
 1. git clone https://github.com/Azure-Samples/cognitive-services-dotnet-sdk-samples.git
-2. Open cognitive-services-dotnet-sdk-samples\BingSearchv7\BingCustomSearch\bing-search-dotnet.sln from Visual Studio 2017
+2. Open cognitive-services-dotnet-sdk-samples\BingSearchv7\BingCustomSearch\Microsoft.Bing.CustomWebSearch.Samples.sln from Visual Studio 2017
 3. npm install https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.CustomSearch/1.2.0 from Tools > Nuget Package Manager > Package Manager Console. **Alternately**, you can go to Project > Manage Nuget Packages and search for "Microsoft.Azure.CognitiveServices.Search.CustomSearch" in the "Browse" tab, and click on "Install". 
-4. Click on "bing-search-dotnet" for debug/release version from the top of Visual Studio. This will run examples from the **BingCustomSearch\CustomSearchSamples.cs** file. **Alternately** you can build and run solution in separate steps.
+4. Click on "Microsoft.Bing.CustomWebSearch.Samples" for debug/release version from the top of Visual Studio. This will run examples from the **BingCustomSearch\CustomSearchSamples.cs** file. **Alternately** you can build and run solution in separate steps.
 
 ### Note: 
-Change TargetFramework in bing-search-dotnet.csproj to “netcoreapp1.1” if you have .NET Framework version as 2.1.2. [ Older ] as follows:
+Change TargetFramework in Microsoft.Bing.CustomWebSearch.Samples.csproj to “netcoreapp1.1” if you have .NET Framework version as 2.1.2. [ Older ] as follows:
 
 **Current**
 ````  

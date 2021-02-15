@@ -1,4 +1,4 @@
-﻿namespace bing_search_dotnet.Samples
+﻿namespace Microsoft.Bing.VideoSearch.Samples
 {
     using System;
     using System.Collections.Generic;

@@ -4,7 +4,7 @@ using Microsoft.Bing.ImageSearch;
 using Microsoft.Bing.ImageSearch.Models;
 using Credentials;
 
-namespace bing_search_dotnet
+namespace Microsoft.Bing.ImageSearch.Samples
 {
     public class BingImageSearchSample
     {

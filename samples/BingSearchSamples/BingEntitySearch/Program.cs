@@ -1,4 +1,4 @@
-﻿namespace bing_search_dotnet
+﻿namespace Microsoft.Bing.EntitySearch.Samples
 {
     using System;
     using System.Collections.Generic;
@@ -59,13 +59,11 @@
                 Console.WriteLine("Ok, now please enter your subscription key:");
                 input = Console.ReadLine();
 
-                Console.WriteLine("Ok, now please enter your endpoint:");
-                var inputEndpoint = Console.ReadLine();
 
                 Console.WriteLine("Ok, running example {0} with subscription key \"{1}\"", exampleIndex, input);
                 Console.WriteLine(Separator);
 
-                examples.Examples[exampleIndex].Invoke(input, inputEndpoint);
+                examples.Examples[exampleIndex].Invoke(input);
 
             } while (DecideRetry());
         }

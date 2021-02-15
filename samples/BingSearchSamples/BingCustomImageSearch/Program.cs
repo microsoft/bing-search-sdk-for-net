@@ -1,4 +1,4 @@
-﻿namespace bing_search_dotnet
+﻿namespace Microsoft.Bing.CustomImageSearch.Samples
 {
     using System;
     using System.Collections.Generic;
@@ -65,7 +65,7 @@
                 Console.WriteLine("Ok, running example {0} with subscription key \"{1}\" and customConfig \"{2}\"", exampleIndex, subscriptionKey, customConfig);
                 Console.WriteLine(Separator);
 
-                examples.Examples[exampleIndex].Invoke(subscriptionKey, customConfig);
+                examples.Examples[exampleIndex].Invoke(subscriptionKey, customConfig.ToString());
 
             } while (DecideRetry());
         }

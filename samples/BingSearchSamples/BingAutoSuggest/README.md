@@ -27,10 +27,10 @@ To get the Bing AutoSuggest Search sample running locally, follow these steps:
 
 1. git clone https://github.com/microsoft/bing-search-sdk-for-net.git
 2. Open project from Visual Studio 2017
-3. Click on "bing-search-dotnet" for debug/release version from the top of Visual Studio. This will run examples from the **BingAutoSuggest\AutoSuggestSearchSamples.cs** file. **Alternately** you can build and run solution in separate steps.
+3. Click on "Microsoft.Bing.Autosuggest.Samples" for debug/release version from the top of Visual Studio. This will run examples from the **BingAutoSuggest\AutoSuggestSearchSamples.cs** file. **Alternately** you can build and run solution in separate steps.
 
 ### Note: 
-Change TargetFramework in bing-search-dotnet.csproj to “netcoreapp1.1” if you have .NET Framework version as 2.1.2. [ Older ] as follows:
+Change TargetFramework in Microsoft.Bing.Autosuggest.Samples.csproj to “netcoreapp1.1” if you have .NET Framework version as 2.1.2. [ Older ] as follows:
 
 **Current**
 ````  

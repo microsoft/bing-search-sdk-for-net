@@ -1,4 +1,4 @@
-﻿namespace bing_search_dotnet
+﻿namespace Microsoft.Bing.EntitySearch.Samples
 {
     using System;
     using System.Collections.Generic;
@@ -57,9 +57,9 @@
                 this.method = method;
             }
 
-            public void Invoke(string subscriptionKey, string inputEndpoint)
+            public void Invoke(string subscriptionKey)
             {
-                this.method.Invoke(null, new object[] { subscriptionKey, inputEndpoint });
+                this.method.Invoke(null, new object[] { subscriptionKey});
             }
         }
     }
