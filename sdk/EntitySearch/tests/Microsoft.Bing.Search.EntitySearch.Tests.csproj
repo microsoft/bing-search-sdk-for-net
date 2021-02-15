@@ -24,7 +24,6 @@
 		</PackageReference>
 	</ItemGroup>
 	<ItemGroup>
-	  <ProjectReference Include="..\..\..\samples\BingSearchSamples\common\Common\Common.csproj" />
 	  <ProjectReference Include="..\src\Microsoft.Bing.Search.EntitySearch.csproj" />
 	</ItemGroup>
 	

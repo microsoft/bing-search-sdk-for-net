@@ -2,7 +2,6 @@ using Microsoft.Bing.CustomSearch;
 using Microsoft.Bing.CustomSearch.Models;
 using System.Linq;
 using Xunit;
-using Credentials;
 using System.Net.Http;
 
 namespace SearchSDK.Tests
@@ -15,7 +14,7 @@ namespace SearchSDK.Tests
         public void CustomSearch()
         {
 
-            var client = new CustomSearchClient(new ClientCredentials(SubscriptionKey));
+            var client = new CustomSearchClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
             var resp = client.CustomInstance.SearchWithHttpMessagesAsync(query: "tom cruise", customConfig: "0").Result;
 
             Assert.NotNull(resp);

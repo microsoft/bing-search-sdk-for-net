@@ -3,7 +3,6 @@
     using System;
     using System.Linq;
     using Microsoft.Bing.CustomImageSearch;
-    using Credentials;
 
     [SampleCollection("CustomImageSearch")]
     public class CustomImageSearchSamples
@@ -11,7 +10,7 @@
         [Example("This will look up a single query (Xbox) and print out number of results, insights token, thumbnail url, content url for first image result")]
         public static void CustomImageSearchResultLookup(string subscriptionKey, string customConfig)
         {
-            var client = new CustomImageSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new CustomImageSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
             
             try
             {

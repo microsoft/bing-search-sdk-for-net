@@ -2,7 +2,6 @@ using Microsoft.Bing.SpellCheck;
 using Microsoft.Bing.SpellCheck.Models;
 using System.Linq;
 using Xunit;
-using Credentials;
 
 namespace SpellCheckSDK.Tests
 {
@@ -14,7 +13,7 @@ namespace SpellCheckSDK.Tests
         public void SpellCheck()
         {
 
-            var client = new SpellCheckClient(new ClientCredentials(SubscriptionKey));
+            var client = new SpellCheckClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
 
             var resp = client.SpellCheckerWithHttpMessagesAsync(text: "Bill Gatas", mode: "proof").Result; ;
             Assert.NotNull(resp);

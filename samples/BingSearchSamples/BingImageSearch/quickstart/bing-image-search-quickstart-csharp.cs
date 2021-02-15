@@ -18,7 +18,7 @@ namespace bing_search_dotnet
             //initialize the client
             //NOTE: If you're using version 1.2.0 or below for the Bing Image Search client library, 
             // use ImageSearchAPI() instead of ImageSearchClient() to initialize your search client.
-            var client = new ImageSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new ImageSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             Console.WriteLine("This application will send an HTTP request to the Bing Image Search API for {0} and print the response.", searchTerm);
 

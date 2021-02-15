@@ -4,7 +4,7 @@
 // regenerated.
 // </auto-generated>
 
-namespace Microsoft.microsoft.Bing.NewsSearch.Models
+namespace Microsoft.Bing.NewsSearch.Models
 {
     using Microsoft.Rest;
     using Newtonsoft.Json;

@@ -1,7 +1,6 @@
 ﻿using Microsoft.Bing.ImageSearch;
 using Xunit;
 using System.Collections.Generic;
-using Credentials;
 
 namespace SearchSDK.Tests
 {
@@ -16,7 +15,7 @@ namespace SearchSDK.Tests
         public void ImageSearch()
         {
 
-            var client = new ImageSearchClient(new ClientCredentials(SubscriptionKey));
+            var client = new ImageSearchClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
 
             var resp = client.Images.SearchAsync(query: Query).Result;
 
@@ -42,7 +41,7 @@ namespace SearchSDK.Tests
         public void ImageDetail()
         {
 
-            var client = new ImageSearchClient(new ClientCredentials(SubscriptionKey));
+            var client = new ImageSearchClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
 
             var resp = client.Images.DetailsAsync(query: Query, insightsToken: ImageInsightsToken, modules: Modules).Result;
 
@@ -75,7 +74,7 @@ namespace SearchSDK.Tests
         public void ImageTrending()
         {
 
-            var client = new ImageSearchClient(new ClientCredentials(SubscriptionKey));
+            var client = new ImageSearchClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
 
             var resp = client.Images.TrendingAsync().Result;
 

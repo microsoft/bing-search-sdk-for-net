@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bing.Search.Video
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bing.Search.VideoSearch.Tests", "tests\Microsoft.Bing.Search.VideoSearch.Tests.csproj", "{2AD19B0C-E70B-47AD-9050-2B7E1D4785F9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "..\..\samples\BingSearchSamples\common\Common\Common.csproj", "{12146219-0A0F-4CB3-81F0-4D21D04AAB93}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{2AD19B0C-E70B-47AD-9050-2B7E1D4785F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AD19B0C-E70B-47AD-9050-2B7E1D4785F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AD19B0C-E70B-47AD-9050-2B7E1D4785F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{12146219-0A0F-4CB3-81F0-4D21D04AAB93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{12146219-0A0F-4CB3-81F0-4D21D04AAB93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{12146219-0A0F-4CB3-81F0-4D21D04AAB93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{12146219-0A0F-4CB3-81F0-4D21D04AAB93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

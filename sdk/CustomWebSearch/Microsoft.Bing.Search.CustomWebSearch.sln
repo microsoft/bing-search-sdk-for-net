@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bing.Search.Custo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bing.Search.CustomWebSearch", "src\Microsoft.Bing.Search.CustomWebSearch.csproj", "{19A3F845-FC55-4C41-8F13-739B22CFADD7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "..\..\samples\BingSearchSamples\common\Common\Common.csproj", "{99CAE4F1-2674-496C-893A-E77BB7D1B429}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{19A3F845-FC55-4C41-8F13-739B22CFADD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19A3F845-FC55-4C41-8F13-739B22CFADD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19A3F845-FC55-4C41-8F13-739B22CFADD7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{99CAE4F1-2674-496C-893A-E77BB7D1B429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99CAE4F1-2674-496C-893A-E77BB7D1B429}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99CAE4F1-2674-496C-893A-E77BB7D1B429}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99CAE4F1-2674-496C-893A-E77BB7D1B429}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,5 @@
 ﻿using Microsoft.Bing.VideoSearch;
 using Xunit;
-using Credentials;
 
 namespace SearchSDK.Tests
 {
@@ -15,7 +14,7 @@ namespace SearchSDK.Tests
         {
 
 
-            var client = new VideoSearchClient(new ClientCredentials(SubscriptionKey));
+            var client = new VideoSearchClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
 
             var resp = client.Videos.SearchAsync(query: Query).Result;
 
@@ -35,7 +34,7 @@ namespace SearchSDK.Tests
         {
 
 
-            var client = new VideoSearchClient(new ClientCredentials(SubscriptionKey));
+            var client = new VideoSearchClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
 
             var resp = client.Videos.DetailsAsync(query: Query, id: VideoResultId).Result;
 
@@ -61,7 +60,7 @@ namespace SearchSDK.Tests
         {
 
 
-            var client = new VideoSearchClient(new ClientCredentials(SubscriptionKey));
+            var client = new VideoSearchClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
 
             var resp = client.Videos.TrendingAsync().Result;
 

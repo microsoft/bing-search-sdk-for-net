@@ -6,7 +6,6 @@
     using Microsoft.Bing.EntitySearch;
     using Microsoft.Bing.EntitySearch.Models;
     using Newtonsoft.Json;
-    using global::Credentials;
 
     [SampleCollection("EntitySearch")]
     public class EntitySearchSamples
@@ -14,7 +13,7 @@
         [Example("This will look up a single entity (tom cruise) and print out a short description about them")]
         public static void DominantEntityLookup(string subscriptionKey)
         {
-            var client = new EntitySearchClient(new ClientCredentials(subscriptionKey));
+            var client = new EntitySearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -48,7 +47,7 @@
         [Example("This will handle disambiguation results for an ambiguous query (harry potter)")]
         public static void HandlingDisambiguation(string subscriptionKey)
         {
-            var client = new EntitySearchClient(new ClientCredentials(subscriptionKey));
+            var client = new EntitySearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -103,7 +102,7 @@
         [Example("This will look up a single restaurant (john howie bellevue) and print out its Telephone")]
         public static void RestaurantLookup(string subscriptionKey)
         {
-            var client = new EntitySearchClient(new ClientCredentials(subscriptionKey));
+            var client = new EntitySearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -139,7 +138,7 @@
         [Example("This will look up a list of restaurants (seattle restaurants) and present their names and phone numbers")]
         public static void MultipleRestaurantLookup(string subscriptionKey)
         {
-            var client = new EntitySearchClient(new ClientCredentials(subscriptionKey));
+            var client = new EntitySearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -189,7 +188,7 @@
         [Example("This triggers a bad request and shows how to read the error response")]
         public static void Error(string subscriptionKey)
         {
-            var client = new EntitySearchClient(new ClientCredentials(subscriptionKey));
+            var client = new EntitySearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {

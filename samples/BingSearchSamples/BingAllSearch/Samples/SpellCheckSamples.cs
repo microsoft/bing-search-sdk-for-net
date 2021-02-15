@@ -2,7 +2,6 @@
 {
     using System;
     using System.Linq;
-    using Credentials;
     using Microsoft.Bing.SpellCheck;
     using Microsoft.Bing.SpellCheck.Models;
 
@@ -12,7 +11,7 @@
         [Example("This will do a search for misspelled query and parse the response")]
         public static void SpellCheckCorrection(string subscriptionKey)
         {
-            var client = new SpellCheckClient(new ClientCredentials(subscriptionKey));
+            var client = new SpellCheckClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -61,7 +60,7 @@
         [Example("This will trigger an error response from the API")]
         public static void SpellCheckError(string subscriptionKey)
         {
-            var client = new SpellCheckClient(new ClientCredentials(subscriptionKey));
+            var client = new SpellCheckClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {

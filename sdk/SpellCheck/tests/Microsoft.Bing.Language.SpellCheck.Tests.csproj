@@ -27,7 +27,6 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\samples\BingSearchSamples\common\Common\Common.csproj" />
     <ProjectReference Include="..\src\Microsoft.Bing.Search.SpellCheck.csproj" />
   </ItemGroup>
 

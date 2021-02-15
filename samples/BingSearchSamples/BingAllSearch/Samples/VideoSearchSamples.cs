@@ -3,7 +3,6 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using Credentials;
     using Microsoft.Bing.VideoSearch;
     using Microsoft.Bing.VideoSearch.Models;
 
@@ -13,7 +12,7 @@
         [Example("This will search videos for (Nasa CubeSat) then verify number of results and print out id, name and url of first video result")]
         public static void VideoSearch(string subscriptionKey)
         {
-            var client = new VideoSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new VideoSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -52,7 +51,7 @@
         [Example("This will search videos for (Interstellar Trailer) that is free, short and 1080p resolution then verify number of results and print out id, name and url of first video result")]
         public static void VideoSearchWithFilters(string subscriptionKey)
         {
-            var client = new VideoSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new VideoSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -91,7 +90,7 @@
         [Example("This will trending videos then verify banner tiles and categories")]
         public static void VideoTrending(string subscriptionKey)
         {
-            var client = new VideoSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new VideoSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -164,7 +163,7 @@
         [Example("This will search videos for (Interstellar Trailer) and then search for detail information of the first video")]
         public static void VideoDetail(string subscriptionKey)
         {
-            var client = new VideoSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new VideoSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {

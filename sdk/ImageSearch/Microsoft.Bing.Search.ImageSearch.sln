@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bing.Search.Image
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bing.Search.ImageSearch.Tests", "tests\Microsoft.Bing.Search.ImageSearch.Tests.csproj", "{CBB99B9C-7009-44C2-BF67-B40FA38939E3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "..\..\samples\BingSearchSamples\common\Common\Common.csproj", "{A8F1026A-7A29-42C0-9F77-C2CCE6C6C928}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{CBB99B9C-7009-44C2-BF67-B40FA38939E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBB99B9C-7009-44C2-BF67-B40FA38939E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBB99B9C-7009-44C2-BF67-B40FA38939E3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A8F1026A-7A29-42C0-9F77-C2CCE6C6C928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8F1026A-7A29-42C0-9F77-C2CCE6C6C928}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8F1026A-7A29-42C0-9F77-C2CCE6C6C928}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8F1026A-7A29-42C0-9F77-C2CCE6C6C928}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bing-search-dotnet", "bing-search-dotnet.csproj", "{1BAB52EF-578B-44C0-9708-F9E7EFAC3DD5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "..\common\Common\Common.csproj", "{2AB26A8C-FABB-4B27-9902-04A0C557084D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bing.Search.WebSearch", "..\..\..\sdk\WebSearch\src\Microsoft.Bing.Search.WebSearch.csproj", "{50E7E82B-03F7-436F-958F-0B460BE12A5E}"
 EndProject
 Global
@@ -19,10 +17,6 @@ Global
 		{1BAB52EF-578B-44C0-9708-F9E7EFAC3DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BAB52EF-578B-44C0-9708-F9E7EFAC3DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BAB52EF-578B-44C0-9708-F9E7EFAC3DD5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2AB26A8C-FABB-4B27-9902-04A0C557084D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AB26A8C-FABB-4B27-9902-04A0C557084D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2AB26A8C-FABB-4B27-9902-04A0C557084D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2AB26A8C-FABB-4B27-9902-04A0C557084D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{50E7E82B-03F7-436F-958F-0B460BE12A5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{50E7E82B-03F7-436F-958F-0B460BE12A5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50E7E82B-03F7-436F-958F-0B460BE12A5E}.Release|Any CPU.ActiveCfg = Release|Any CPU

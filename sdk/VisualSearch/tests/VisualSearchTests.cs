@@ -1,7 +1,6 @@
 ﻿using Microsoft.Bing.VisualSearch;
 using Microsoft.Bing.VisualSearch.Models;
 using Newtonsoft.Json;
-using Credentials;
 using Xunit;
 using System.IO;
 
@@ -18,7 +17,7 @@ namespace SearchSDK.Tests
         public void VisualSearchWithBinary()
         {
 
-            var client = new VisualSearchClient(new ClientCredentials(SubscriptionKey));
+            var client = new VisualSearchClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
 
             using (FileStream stream = new FileStream(Path.Combine("TestImages", "image.jpg"), FileMode.Open))
             {
@@ -45,7 +44,7 @@ namespace SearchSDK.Tests
         {
 
 
-            var client = new VisualSearchClient(new ClientCredentials(SubscriptionKey));
+            var client = new VisualSearchClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
 
             ImageInfo ImageInfo = new ImageInfo(imageInsightsToken: ImageInsightsToken, cropArea: CropArea);
             Filters Filters = new Filters(site: "www.bing.com");
@@ -72,7 +71,7 @@ namespace SearchSDK.Tests
         {
 
 
-            var client = new VisualSearchClient(new ClientCredentials(SubscriptionKey));
+            var client = new VisualSearchClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
 
             ImageInfo ImageInfo = new ImageInfo(url: ImageUrl, cropArea: CropArea);
             VisualSearchRequest VisualSearchRequest = new VisualSearchRequest(imageInfo: ImageInfo);
@@ -97,7 +96,7 @@ namespace SearchSDK.Tests
         {
 
 
-            var client = new VisualSearchClient(new ClientCredentials(SubscriptionKey));
+            var client = new VisualSearchClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
 
             ImageInfo ImageInfo = new ImageInfo(url: ImageUrl, cropArea: CropArea);
             VisualSearchRequest VisualSearchRequest = new VisualSearchRequest(imageInfo: ImageInfo);

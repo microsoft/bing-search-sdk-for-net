@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Credentials
+namespace Microsoft.Bing.ImageSearch
 {
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using Microsoft.Rest;
     using System;
     using System.Collections.Generic;
@@ -14,7 +13,7 @@ namespace Credentials
     using System.Threading;
     using System.Threading.Tasks;
 
-    public class ClientCredentials : ServiceClientCredentials
+    public class ApiKeyServiceClientCredentials : ServiceClientCredentials
     {
 
         private readonly string subscriptionKey;
@@ -23,7 +22,7 @@ namespace Credentials
         /// Creates a new instance of the ClientCredentials class
         /// </summary>
         /// <param name="subscriptionKey">The subscription key to authenticate and authorize as</param>
-        public ClientCredentials(string subscriptionKey)
+        public ApiKeyServiceClientCredentials(string subscriptionKey)
         {
             this.subscriptionKey = subscriptionKey;
         }

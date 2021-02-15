@@ -2,7 +2,6 @@ using Microsoft.Bing.EntitySearch;
 using Microsoft.Bing.EntitySearch.Models;
 using System.Linq;
 using Xunit;
-using Credentials;
 namespace SearchSDK.Tests
 {
     public class EntitySearchTests
@@ -13,7 +12,7 @@ namespace SearchSDK.Tests
         public void EntitySearch()
         {
 
-            IEntitySearchClient client = new EntitySearchClient(new ClientCredentials(SubscriptionKey));
+            IEntitySearchClient client = new EntitySearchClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
 
             var resp = client.Entities.Search(query: "tom cruise");
 

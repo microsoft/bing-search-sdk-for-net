@@ -4,7 +4,7 @@
 // regenerated.
 // </auto-generated>
 
-namespace Microsoft.microsoft.Bing.NewsSearch
+namespace Microsoft.Bing.NewsSearch
 {
     using Microsoft.Rest;
     using Microsoft.Rest.Serialization;

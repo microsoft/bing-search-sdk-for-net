@@ -11,7 +11,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\sdk\NewsSearch\src\Microsoft.Bing.Search.NewsSearch.csproj" />
-    <ProjectReference Include="..\common\Common\Common.csproj" />
   </ItemGroup>
 
 </Project>

@@ -7,7 +7,6 @@
     using Microsoft.Bing.WebSearch.Models;
     using Newtonsoft.Json;
     using System.Collections.Generic;
-    using Credentials;
 
     [SampleCollection("WebSearch")]
     public class WebSearchSamples
@@ -15,7 +14,7 @@
         [Example("This will look up a single query (Xbox) and print out name and url for first web, image, news and videos results")]
         public static void WebSearchResultTypesLookup(string subscriptionKey)
         {
-            var client = new WebSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new WebSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -121,7 +120,7 @@
         [Example("This will search (Best restaurants in Seattle), verify number of results and print out name and url of first result")]
         public static void WebResultsWithCountAndOffset(string subscriptionKey)
         {
-            var client = new WebSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new WebSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -158,7 +157,7 @@
         [Example("This will search (Microsoft) with response filters to news and print details of news")]
         public static void WebSearchWithResponseFilter(string subscriptionKey)
         {
-            var client = new WebSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new WebSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -198,7 +197,7 @@
         [Example("This will search (Lady Gaga) with answerCount and promote parameters and print details of answers")]
         public static void WebSearchWithAnswerCountPromoteAndSafeSearch(string subscriptionKey)
         {
-            var client = new WebSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new WebSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {

@@ -4,7 +4,6 @@
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
-    using Credentials;
     using Microsoft.Bing.VisualSearch;
     using Microsoft.Bing.VisualSearch.Models;
     using Newtonsoft.Json;
@@ -15,7 +14,7 @@
         [Example("This will send an image binary in the body of the post request and print out the imageInsightsToken, the number of tags, the number of actions, and the first actionType")]
         public static void VisualSearchImageBinary(string subscriptionKey)
         {
-            var client = new VisualSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new VisualSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -77,7 +76,7 @@
         [Example("This will send an image binary in the body of the post request, along with a cropArea object, and print out the imageInsightsToken, the number of tags, the number of actions, and the first actionType")]
         public static void VisualSearchImageBinaryWithCropArea(string subscriptionKey)
         {
-            var client = new VisualSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new VisualSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -144,7 +143,7 @@
         [Example("This will send an image url in the knowledgeRequest parameter, along with a \"site:www.pinterest.com\" filter, and print out the imageInsightsToken, the number of tags, the number of actions, and the first actionType")]
         public static void VisualSearchUrlWithFilters(string subscriptionKey)
         {
-            var client = new VisualSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new VisualSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -212,7 +211,7 @@
         [Example("This will send an image insights token in the knowledgeRequest parameter, along with a cropArea object, and print out the imageInsightsToken, the number of tags, the number of actions, and the first actionType")]
         public static void VisualSearchInsightsTokenWithCropArea(string subscriptionKey)
         {
-            var client = new VisualSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new VisualSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -279,7 +278,7 @@
         [Example("This will send an image url in the knowledgeRequest parameter, along with a crop area, and print out the imageInsightsToken, the number of tags, the number of actions, and the first actionType")]
         public static void VisualSearchUrlWithJson(string subscriptionKey)
         {
-            var client = new VisualSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new VisualSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {

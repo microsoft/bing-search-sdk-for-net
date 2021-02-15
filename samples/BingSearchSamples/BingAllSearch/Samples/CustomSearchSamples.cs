@@ -14,7 +14,6 @@
     using System.Net.Http;
     using System.Threading;
     using System.Threading.Tasks;
-    using global::Credentials;
 
     [SampleCollection("CustomSearch")]
     public class CustomSearchSamples
@@ -22,7 +21,7 @@
         [Example("This will look up a single query (Xbox) and print out name and url for first web result")]
         public static void CustomSearchWebPageResultLookup(string subscriptionKey, string customConfig)
         {
-            var client = new CustomSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new CustomSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
             
             try
             {

@@ -3,7 +3,6 @@ using Microsoft.Bing.AutoSuggest;
 using Microsoft.Bing.AutoSuggest.Models;
 using Microsoft.Rest.ClientRuntime.Azure.TestFramework;
 using System.Reflection;
-using Credentials;
 using Xunit;
 
 
@@ -17,7 +16,7 @@ namespace SearchSDK.Tests
         [Fact]
         public void AutoSuggest()
         {
-            var client = new AutoSuggestClient(new ClientCredentials(SubscriptionKey));
+            var client = new AutoSuggestClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
             var resp = client.AutoSuggestMethod(query: "Satya Nadella");
             Assert.NotNull(resp);
             Assert.NotNull(resp.QueryContext);

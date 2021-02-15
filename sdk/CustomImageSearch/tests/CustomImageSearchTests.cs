@@ -2,7 +2,6 @@ using Microsoft.Bing.CustomImageSearch;
 using Microsoft.Bing.CustomImageSearch.Models;
 using System.Linq;
 using Xunit;
-using Credentials;
 using System.Net.Http;
 
 namespace SearchSDK.Tests
@@ -15,7 +14,7 @@ namespace SearchSDK.Tests
         public void CustomImageSearch()
         {
                 
-            var client = new CustomImageSearchClient(new ClientCredentials(SubscriptionKey));
+            var client = new CustomImageSearchClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
             var resp = client.CustomInstance.ImageSearchAsync(query: "Xbox", customConfig: "0").Result;
 
             Assert.NotNull(resp);

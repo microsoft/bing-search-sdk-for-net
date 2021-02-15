@@ -1,8 +1,7 @@
-using Microsoft.microsoft.Bing.NewsSearch;
-using Microsoft.microsoft.Bing.NewsSearch.Models;
+using Microsoft.Bing.NewsSearch;
+using Microsoft.Bing.NewsSearch.Models;
 using System.Linq;
 using Xunit;
-using Credentials;
 
 namespace SearchSDK.Tests
 {
@@ -14,7 +13,7 @@ namespace SearchSDK.Tests
         public void NewsSearch()
         {
 
-            var client = new NewsSearchClient(new ClientCredentials(SubscriptionKey));
+            var client = new NewsSearchClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
 
             var resp = client.News.SearchAsync(query: "tom cruise").Result;
 
@@ -37,7 +36,7 @@ namespace SearchSDK.Tests
         {
 
 
-            var client = new NewsSearchClient(new ClientCredentials(SubscriptionKey));
+            var client = new NewsSearchClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
 
             var resp = client.News.CategoryAsync(category: "sports").Result;
 
@@ -60,7 +59,7 @@ namespace SearchSDK.Tests
         public void NewsTrending()
         {
 
-            var client = new NewsSearchClient(new ClientCredentials(SubscriptionKey));
+            var client = new NewsSearchClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
             var resp = client.News.TrendingAsync().Result;
 
             Assert.NotNull(resp);

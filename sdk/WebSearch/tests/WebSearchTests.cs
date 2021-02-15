@@ -2,7 +2,6 @@ using Microsoft.Bing.WebSearch;
 using Microsoft.Bing.WebSearch.Models;
 using System.Linq;
 using Xunit;
-using Credentials;
 
 namespace SearchSDK.Tests
 {
@@ -14,7 +13,7 @@ namespace SearchSDK.Tests
         public void WebSearch()
         {
 
-            var client = new WebSearchClient(new ClientCredentials(SubscriptionKey));
+            var client = new WebSearchClient(new ApiKeyServiceClientCredentials(SubscriptionKey));
 
             var resp = client.Web.SearchAsync(query: "tom cruise").Result;
 

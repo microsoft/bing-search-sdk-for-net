@@ -12,7 +12,6 @@
     using System.Net.Http;
     using System.Threading;
     using System.Threading.Tasks;
-    using Credentials;
 
     [SampleCollection("AutoSuggestSearch")]
     public class AutoSuggestSearchSamples
@@ -20,7 +19,7 @@
         [Example("This will request suggestions (Satya Nadella) and print out content about them")]
         public static void AutoSuggestLookup(string subscriptionKey)
         {
-            var client = new AutoSuggestClient(new ClientCredentials(subscriptionKey));
+            var client = new AutoSuggestClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -54,7 +53,7 @@
         [Example("This triggers a bad request and shows how to read the error response")]
         public static void Error(string subscriptionKey)
         {
-            var client = new AutoSuggestClient(new ClientCredentials(subscriptionKey + "1"));
+            var client = new AutoSuggestClient(new ApiKeyServiceClientCredentials(subscriptionKey + "1"));
 
             try
             {

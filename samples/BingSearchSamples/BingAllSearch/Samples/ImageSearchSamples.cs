@@ -3,7 +3,6 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using Credentials;
     using Microsoft.Bing.ImageSearch;
     using Microsoft.Bing.ImageSearch.Models;
 
@@ -13,7 +12,7 @@
         [Example("This will search images for (canadian rockies) then verify number of results and print out first image result, pivot suggestion, and query expansion")]
         public static void ImageSearch(string subscriptionKey)
         {
-            var client = new ImageSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new ImageSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -96,7 +95,7 @@
         [Example("This will search images for (studio ghibli), filtered for animated gifs and wide aspect, then verify number of results and print out insightsToken, thumbnail url and web url of first result")]
         public static void ImageSearchWithFilters(string subscriptionKey)
         {
-            var client = new ImageSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new ImageSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -136,7 +135,7 @@
         [Example("This will search for trending images then verify categories and tiles")]
         public static void ImageTrending(string subscriptionKey)
         {
-            var client = new ImageSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new ImageSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -186,7 +185,7 @@
         [Example("This will search images for (degas) and then search for image details of the first image")]
         public static void ImageDetail(string subscriptionKey)
         {
-            var client = new ImageSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new ImageSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {

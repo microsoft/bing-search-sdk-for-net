@@ -3,9 +3,8 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using Credentials;
-    using Microsoft.microsoft.Bing.NewsSearch;
-    using Microsoft.microsoft.Bing.NewsSearch.Models;
+    using Microsoft.Bing.NewsSearch;
+    using Microsoft.Bing.NewsSearch.Models;
 
     [SampleCollection("NewsSearch")]
     public class NewsSearchSamples
@@ -13,7 +12,7 @@
         [Example("This will search news for (Quantum  Computing) with market and count parameters then verify number of results and print out totalEstimatedMatches, name, url, description, published time and name of provider of the first news result")]
         public static void NewsSearch(string subscriptionKey)
         {
-            var client = new NewsSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new NewsSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -54,7 +53,7 @@
         [Example("This will search most recent news for (Artificial Intelligence) with freshness and sortBy parameters then verify number of results and print out totalEstimatedMatches, name, url, description, published time and name of provider of the first news result")]
         public static void NewsSearchWithFilters(string subscriptionKey)
         {
-            var client = new NewsSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new NewsSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -95,7 +94,7 @@
         [Example("This will search category news for movie and TV entertainment with safe search then verify number of results and print out category, name, url, description, published time and name of provider of the first news result")]
         public static void NewsCategory(string subscriptionKey)
         {
-            var client = new NewsSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new NewsSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {
@@ -136,7 +135,7 @@
         [Example("This will search news trending topics in Bing then verify number of results and print out name, text of query, webSearchUrl, newsSearchUrl and image Url of the first news result")]
         public static void TrendingTopics(string subscriptionKey)
         {
-            var client = new NewsSearchClient(new ClientCredentials(subscriptionKey));
+            var client = new NewsSearchClient(new ApiKeyServiceClientCredentials(subscriptionKey));
 
             try
             {

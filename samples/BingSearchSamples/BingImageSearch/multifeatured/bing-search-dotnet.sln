@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bing-search-dotnet", "bing-search-dotnet.csproj", "{1BAB52EF-578B-44C0-9708-F9E7EFAC3DD5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "..\..\common\Common\Common.csproj", "{532EC77A-56C2-4F11-9B51-A0D2183E706C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bing.Search.ImageSearch", "..\..\..\..\sdk\ImageSearch\src\Microsoft.Bing.Search.ImageSearch.csproj", "{D1B5A7A4-4759-449B-8FAD-66ABC48FF4B1}"
 EndProject
 Global
@@ -19,10 +17,6 @@ Global
 		{1BAB52EF-578B-44C0-9708-F9E7EFAC3DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BAB52EF-578B-44C0-9708-F9E7EFAC3DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BAB52EF-578B-44C0-9708-F9E7EFAC3DD5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{532EC77A-56C2-4F11-9B51-A0D2183E706C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{532EC77A-56C2-4F11-9B51-A0D2183E706C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{532EC77A-56C2-4F11-9B51-A0D2183E706C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{532EC77A-56C2-4F11-9B51-A0D2183E706C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D1B5A7A4-4759-449B-8FAD-66ABC48FF4B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D1B5A7A4-4759-449B-8FAD-66ABC48FF4B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1B5A7A4-4759-449B-8FAD-66ABC48FF4B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
