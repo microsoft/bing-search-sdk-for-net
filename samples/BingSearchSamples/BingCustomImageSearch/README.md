@@ -10,6 +10,7 @@ This sample references the Bing Custom Image Search SDK, which is a stand-alone 
 
 This example provides sample usecases of the the [Bing Custom Search v7](https://github.com/microsoft/bing-search-sdk-for-net/tree/main/samples/BingSearchSamples/BingCustomImageSearch)
 
+* Using the **Bing Custom Image Search Nuget Package** at https://www.nuget.org/packages/Microsoft.Bing.Search.CustomImageSearch/
 
 ## Getting Started
 
@@ -26,7 +27,7 @@ To get the Bing Custom Image Search Search sample running locally, follow these 
 
 1. git clone https://github.com/microsoft/bing-search-sdk-for-net.git
 2. Open bing-search-sdk-for-net\samples\BingSearchSamples\BingCustomImageSearch\Microsoft.Bing.CustomImageSearch.Samples.sln from Visual Studio 2017
-3. npm install #NUGETPACKAGELINK from Tools > Nuget Package Manager > Package Manager Console. **Alternately**, you can go to Project > Manage Nuget Packages and search for "Microsoft.Bing.CustomImageSearch" in the "Browse" tab, and click on "Install".
+3. npm install https://www.nuget.org/packages/Microsoft.Bing.Search.CustomImageSearch/ from Tools > Nuget Package Manager > Package Manager Console. **Alternately**, you can go to Project > Manage Nuget Packages and search for "Microsoft.Bing.CustomImageSearch" in the "Browse" tab, and click on "Install".
 4. Click on "Microsoft.Bing.CustomImageSearch.Samples" for debug/release version from the top of Visual Studio. This will run examples from the **BingCustomImageSearch\CustomImageSearchSamples.cs** file. **Alternately** you can build and run solution in separate steps.
 
 ### Note: 
@@ -43,5 +44,6 @@ Change TargetFramework in Microsoft.Bing.CustomImageSearch.Samples.csproj to “
 
 ## Resources
 - [Bing Custom Search Reference Document](https://docs.microsoft.com/en-us/bing/search-apis/bing-custom-search/overview)
+- [Bing Custom Image Search Nuget Package](https://www.nuget.org/packages/Microsoft.Bing.Search.CustomImageSearch/)
 - [Bing Custom Search Search Dotnet SDK (source code)](https://github.com/microsoft/bing-search-sdk-for-net/tree/main/sdk/CustomImageSearchSearch) 
 - Support channels: [Stack Overflow](https://stackoverflow.com/questions/tagged/bing-search)

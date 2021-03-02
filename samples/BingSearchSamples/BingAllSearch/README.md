@@ -12,7 +12,15 @@ This sample references the all Bing Search SDKs, which is the complete list of p
 
 This example provides sample usecases of the the [Bing Search APIs v7](https://github.com/microsoft/bing-search-sdk-for-net/tree/main/samples/BingSearchSamples) using the below packages:
 
-
+* **Bing Web Search Nuget Package** at https://www.nuget.org/packages/Microsoft.Bing.Search.WebSearch/
+* **Bing Image Search Nuget Package** at https://www.nuget.org/packages/Microsoft.Bing.Search.ImageSearch/
+* **Bing News Search Nuget Package** at https://www.nuget.org/packages/Microsoft.Bing.Search.NewsSearch/
+* **Bing Video Search Nuget Package** at https://www.nuget.org/packages/Microsoft.Bing.Search.VideoSearch/
+* **Bing Visual Search Nuget Package** at https://www.nuget.org/packages/Microsoft.Bing.Search.VisualSearch/
+* **Bing Custom Search Nuget Package** at https://www.nuget.org/packages/Microsoft.Bing.Search.CustomWebSearch/
+* **Bing Entity Search Nuget Package** at https://www.nuget.org/packages/Microsoft.Bing.Search.EntitySearch/
+* **Bing Spell Check Nuget Package** at https://www.nuget.org/packages/Microsoft.Bing.Search.Spellcheck/
+* **Bing Autosuggest Nuget Package** at https://www.nuget.org/packages/Microsoft.Bing.Search.AutoSuggest/
 For ease, these packages are comntained in the TempPackage folder. 
 
 ## Getting Started

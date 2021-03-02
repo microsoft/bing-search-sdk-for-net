@@ -12,6 +12,7 @@ This sample references the Bing Entity Search SDK, which is a stand-alone packag
 
 This example provides sample usecases of the the [Bing Entity Search v7](https://github.com/microsoft/bing-search-sdk-for-net/tree/main/samples/BingSearchSamples/BingEntitySearch)
 
+* Using the **Bing Entity Search Nuget Package** at https://www.nuget.org/packages/Microsoft.Bing.Search.EntitySearch/
 
 ## Getting Started
 
@@ -27,7 +28,7 @@ To get the Bing Entity Search sample running locally, follow these steps:
 
 1. git clone https://github.com/microsoft/bing-search-sdk-for-net.git
 2. Open bing-search-sdk-for-net\samples\BingSearchSamples\BingEntitySearch\Microsoft.Bing.EntitySearch.Samples.sln from Visual Studio 2017
-3. npm install #NUGETPACKAGELINK from Tools > Nuget Package Manager > Package Manager Console. **Alternately**, you can go to Project > Manage Nuget Packages and search for "Microsoft.Bing.EntitySearch" in the "Browse" tab, and click on "Install".
+3. npm install https://www.nuget.org/packages/Microsoft.Bing.Search.EntitySearch/ from Tools > Nuget Package Manager > Package Manager Console. **Alternately**, you can go to Project > Manage Nuget Packages and search for "Microsoft.Bing.EntitySearch" in the "Browse" tab, and click on "Install".
 4. Click on "Microsoft.Bing.EntitySearch.Samples" for debug/release version from the top of Visual Studio. This will run examples from the **BingEntitySearch\EntitySearchSamples.cs** file. **Alternately** you can build and run solution in separate steps.
 
 ### Note: 
@@ -43,5 +44,6 @@ Change TargetFramework in Microsoft.Bing.EntitySearch.Samples.csproj to “netco
 
 ## Resources
 - [Bing Entity Search Reference Document](https://docs.microsoft.com/en-us/bing/search-apis/bing-entity-search/overview)
+- [Bing Entity Search Nuget Package](https://www.nuget.org/packages/Microsoft.Bing.Search.EntitySearch/)
 - [Bing Entity Search Dotnet SDK (source code)](https://github.com/microsoft/bing-search-sdk-for-net/tree/main/sdk/EntitySearch) 
 - Support channels: [Stack Overflow](https://stackoverflow.com/questions/tagged/bing-search) 

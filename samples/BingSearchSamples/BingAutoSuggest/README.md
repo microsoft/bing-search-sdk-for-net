@@ -12,6 +12,7 @@ This sample references the Bing AutoSuggest Search SDK, which is a stand-alone p
 
 This example provides sample usecases of the the Bing AutoSuggest Search v7
 
+* Using the **Bing AutoSuggest Search Nuget Package** at https://www.nuget.org/packages/Microsoft.Bing.Search.AutoSuggest/
 
 ## Getting Started
 
@@ -27,7 +28,8 @@ To get the Bing AutoSuggest Search sample running locally, follow these steps:
 
 1. git clone https://github.com/microsoft/bing-search-sdk-for-net.git
 2. Open project from Visual Studio 2017
-3. Click on "Microsoft.Bing.Autosuggest.Samples" for debug/release version from the top of Visual Studio. This will run examples from the **BingAutoSuggest\AutoSuggestSearchSamples.cs** file. **Alternately** you can build and run solution in separate steps.
+3. npm install https://www.nuget.org/packages/Microsoft.Bing.Search.AutoSuggest/ from Tools > Nuget Package Manager > Package Manager Console. **Alternately**, you can go to Project > Manage Nuget Packages and search for "Microsoft.Azure.CognitiveServices.Search.AutoSuggest" in the "Browse" tab, and click on "Install". 
+4. Click on "Microsoft.Bing.Autosuggest.Samples" for debug/release version from the top of Visual Studio. This will run examples from the **BingAutoSuggest\AutoSuggestSearchSamples.cs** file. **Alternately** you can build and run solution in separate steps.
 
 ### Note: 
 Change TargetFramework in Microsoft.Bing.Autosuggest.Samples.csproj to “netcoreapp1.1” if you have .NET Framework version as 2.1.2. [ Older ] as follows:
@@ -49,5 +51,6 @@ Change TargetFramework in Microsoft.Bing.Autosuggest.Samples.csproj to “netcor
 ## Resources
 - [Bing AutoSuggest Search API Demo & capabilities](https://api.bing.microsoft.com/v7.0/suggestions)
 - [Bing AutoSuggest Search Reference Document](https://docs.microsoft.com/en-us/bing/search-apis/bing-autosuggest/overview)
+- [Bing AutoSuggest Search Nuget Package](https://www.nuget.org/packages/Microsoft.Bing.Search.AutoSuggest/)
 - [Bing AutoSuggest Search Dotnet SDK (source code)](https://github.com/microsoft/bing-search-sdk-for-net/tree/main/samples/BingSearchSamples/BingAutoSuggest) 
 - Support channels: [Stack Overflow](https://stackoverflow.com/questions/tagged/bing-search) or [Azure Support](https://azure.microsoft.com/en-us/support/options/)

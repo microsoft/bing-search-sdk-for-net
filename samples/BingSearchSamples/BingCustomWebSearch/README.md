@@ -10,6 +10,7 @@ This sample references the Bing Custom Search SDK, which is a stand-alone packag
 
 This example provides sample usecases of the the [Bing Custom Search v7](https://github.com/microsoft/bing-search-sdk-for-net/tree/main/samples/BingSearchSamples/BingCustomWebSearch)
 
+* Using the **Bing Custom Search Nuget Package** at https://www.nuget.org/packages/Microsoft.Bing.Search.CustomWebSearch/
 
 ## Getting Started
 
@@ -25,7 +26,7 @@ To get the Bing Custom Web Search Search sample running locally, follow these st
 
 1. git clone https://github.com/microsoft/bing-search-sdk-for-net.git
 2. Open bing-search-sdk-for-net\samples\BingSearchSamples\BingCustomWebSearch\Microsoft.Bing.CustomWebSearch.Samples.sln from Visual Studio 2017
-3. npm install #NUGETPACKAGELINK from Tools > Nuget Package Manager > Package Manager Console. **Alternately**, you can go to Project > Manage Nuget Packages and search for "Microsoft.Bing.CustomWebSearch" in the "Browse" tab, and click on "Install".
+3. npm install https://www.nuget.org/packages/Microsoft.Bing.Search.CustomWebSearch/ from Tools > Nuget Package Manager > Package Manager Console. **Alternately**, you can go to Project > Manage Nuget Packages and search for "Microsoft.Bing.CustomWebSearch" in the "Browse" tab, and click on "Install".
 4. Click on "Microsoft.Bing.CustomWebSearch.Samples" for debug/release version from the top of Visual Studio. This will run examples from the **BingCustomSearch\CustomSearchSamples.cs** file. **Alternately** you can build and run solution in separate steps.
 
 ### Note: 
@@ -48,5 +49,6 @@ Change TargetFramework in Microsoft.Bing.CustomWebSearch.Samples.csproj to “ne
 
 ## Resources
 - [Bing Custom Search Reference Document](https://www.customsearch.ai/)
+- [Bing Custom Search Nuget Package](https://www.nuget.org/packages/Microsoft.Bing.Search.CustomWebSearch/)
 - [Bing Custom Search Search Dotnet SDK (source code)](https://github.com/microsoft/bing-search-sdk-for-net/tree/main/sdk/CustomWebSearchSearch) 
 - Support channels: [Stack Overflow](https://stackoverflow.com/questions/tagged/bing-search) 

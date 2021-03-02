@@ -10,7 +10,7 @@ This sample references the Bing Web Search SDK, which is a stand-alone package f
 
 This example provides sample usecases of the the [Bing Web Search v7](https://github.com/microsoft/bing-search-sdk-for-net/tree/main/samples/BingSearchSamples/BingWebSearch)
 
-
+* Using the **Bing Web Search Nuget Package** at https://www.nuget.org/packages/Microsoft.Bing.Search.WebSearch/
 
 ## Getting Started
 
@@ -26,7 +26,7 @@ To get the Bing Web Search sample running locally, follow these steps:
 
 1. git clone https://github.com/microsoft/bing-search-sdk-for-net.git
 2. Open bing-search-sdk-for-net\samples\BingSearchSamples\BingWebSearch\Microsoft.Bing.WebSearch.Samples.sln from Visual Studio 2017
-3. npm install #NUGETPACKAGELINK from Tools > Nuget Package Manager > Package Manager Console. **Alternately**, you can go to Project > Manage Nuget Packages and search for "Microsoft.Bing.WebSearch" in the "Browse" tab, and click on "Install". 
+3. npm install https://www.nuget.org/packages/Microsoft.Bing.Search.WebSearch/ from Tools > Nuget Package Manager > Package Manager Console. **Alternately**, you can go to Project > Manage Nuget Packages and search for "Microsoft.Bing.WebSearch" in the "Browse" tab, and click on "Install". 
 4. Click on "Microsoft.Bing.WebSearch.Samples" for debug/release version from the top of Visual Studio. This will run examples from the **BingWebSearch\WebSearchSamples.cs** file. **Alternately** you can build and run solution in separate steps.
 
 ### Note: 
@@ -42,5 +42,6 @@ Change TargetFramework in Microsoft.Bing.WebSearch.Samples.csproj to “netcorea
 
 ## Resources
 - [Bing Web Search Reference Document](https://docs.microsoft.com/en-us/bing/search-apis/bing-web-search/overview)
-- [Bing Web Search Dotnet SDK (source code)](https://github.com/microsoft/bing-search-sdk-for-net/tree/main/sdk/WebSearch) 
+- [Bing Web Search Dotnet SDK (source code)](https://github.com/microsoft/bing-search-sdk-for-net/tree/main/sdk/WebSearch)
+- [Bing Web Search Nuget Package](https://www.nuget.org/packages/Microsoft.Bing.Search.WebSearch/) 
 - Support channels: [Stack Overflow](https://stackoverflow.com/questions/tagged/bing-search)

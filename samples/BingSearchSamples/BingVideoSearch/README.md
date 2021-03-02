@@ -10,7 +10,7 @@ This sample references the Bing Video Search SDK, which is a stand-alone package
 
 This example provides sample usecases of the the [Bing Video Search v7](https://github.com/microsoft/bing-search-sdk-for-net/tree/main/samples/BingSearchSamples/BingVideoSearch)
 
-
+* Using the **Bing Video Search Nuget Package** at https://www.nuget.org/packages/Microsoft.Bing.Search.VideoSearch/
 
 ## Getting Started
 
@@ -28,7 +28,7 @@ To get the Bing Video Search sample running locally, follow these steps:
 
 1. git clone https://github.com/microsoft/bing-search-sdk-for-net.git
 2. Open bing-search-sdk-for-net\samples\BingSearchSamples\BingVideoSearch\Microsoft.Bing.VideoSearch.Samples.sln from Visual Studio 2017
-3. npm install #NUGETPACKAGELINK from Tools > Nuget Package Manager > Package Manager Console. **Alternately**, you can go to Project > Manage Nuget Packages and search for "Microsoft.Bing.VideoSearch" in the "Browse" tab, and click on "Install".
+3. npm install https://www.nuget.org/packages/Microsoft.Bing.Search.VideoSearch/ from Tools > Nuget Package Manager > Package Manager Console. **Alternately**, you can go to Project > Manage Nuget Packages and search for "Microsoft.Bing.VideoSearch" in the "Browse" tab, and click on "Install".
 4. Click on "Microsoft.Bing.VideoSearch.Samples" for debug/release version from the top of Visual Studio. This will run examples from the **BingVideoSearch\VideoSearchSamples.cs** file. **Alternately** you can build and run solution in separate steps.
 
 ### Note: 
@@ -44,4 +44,5 @@ Change TargetFramework in Microsoft.Bing.VideoSearch.Samples.csproj to “netcor
 ## Resources
 - [Bing Video Search Reference Document](https://docs.microsoft.com/en-us/bing/search-apis/bing-video-search/overview)
 - [Bing Video Search Dotnet SDK (source code)](https://github.com/microsoft/bing-search-sdk-for-net/tree/main/sdk/VideoSearch) 
+- [Bing Video Search Nuget Package](https://www.nuget.org/packages/Microsoft.Bing.Search.VideoSearch/)
 - Support channels: [Stack Overflow](https://stackoverflow.com/questions/tagged/bing-search)
