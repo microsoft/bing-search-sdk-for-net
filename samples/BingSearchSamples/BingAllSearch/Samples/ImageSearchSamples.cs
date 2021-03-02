@@ -44,7 +44,7 @@
                     Console.WriteLine($"Image result next offset: {imageResults.NextOffset}");
 
                     // Pivot suggestions
-                    if (imageResults.PivotSuggestions.Count > 0)
+                    if (imageResults.PivotSuggestions != null)
                     {
                         var firstPivot = imageResults.PivotSuggestions.First();
 
@@ -70,7 +70,7 @@
                     }
 
                     // Query expansions
-                    if (imageResults.QueryExpansions.Count > 0)
+                    if (imageResults.QueryExpansions != null)
                     {
                         var firstQueryExpansion = imageResults.QueryExpansions.First();
 

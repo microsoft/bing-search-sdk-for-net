@@ -6,11 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Bing.Search.ImageSearch" Version="1.0.0" />
     <PackageReference Include="Microsoft.Rest.ClientRuntime" Version="2.3.22" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\sdk\ImageSearch\src\Microsoft.Bing.Search.ImageSearch.csproj" />
   </ItemGroup>
 
 </Project>

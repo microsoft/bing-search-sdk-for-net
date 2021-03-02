@@ -6,6 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Bing.Search.AutoSuggest" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Bing.Search.CustomImageSearch" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Bing.Search.CustomWebSearch" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Bing.Search.EntitySearch" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Bing.Search.ImageSearch" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Bing.Search.NewsSearch" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Bing.Search.Spellcheck" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Bing.Search.VideoSearch" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Bing.Search.VisualSearch" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Bing.Search.WebSearch" Version="1.0.0" />
     <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.8" />
     <PackageReference Include="Microsoft.Rest.ClientRuntime" Version="2.3.22" />
   </ItemGroup>
@@ -27,16 +37,5 @@
 		<None Include="TestImages\*.jpg">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
-	</ItemGroup>
-	<ItemGroup>
-	  <ProjectReference Include="..\..\..\sdk\AutoSuggest\src\Microsoft.Bing.Search.AutoSuggest.csproj" />
-	  <ProjectReference Include="..\..\..\sdk\CustomWebSearch\src\Microsoft.Bing.Search.CustomWebSearch.csproj" />
-	  <ProjectReference Include="..\..\..\sdk\EntitySearch\src\Microsoft.Bing.Search.EntitySearch.csproj" />
-	  <ProjectReference Include="..\..\..\sdk\ImageSearch\src\Microsoft.Bing.Search.ImageSearch.csproj" />
-	  <ProjectReference Include="..\..\..\sdk\NewsSearch\src\Microsoft.Bing.Search.NewsSearch.csproj" />
-	  <ProjectReference Include="..\..\..\sdk\SpellCheck\src\Microsoft.Bing.Search.SpellCheck.csproj" />
-	  <ProjectReference Include="..\..\..\sdk\VideoSearch\src\Microsoft.Bing.Search.VideoSearch.csproj" />
-	  <ProjectReference Include="..\..\..\sdk\VisualSearch\src\Microsoft.Bing.Search.VisualSearch.csproj" />
-	  <ProjectReference Include="..\..\..\sdk\WebSearch\src\Microsoft.Bing.Search.WebSearch.csproj" />
 	</ItemGroup>
 </Project>
