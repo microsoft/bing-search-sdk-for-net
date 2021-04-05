@@ -28,9 +28,9 @@ To get the Bing Web Search sample running locally, follow these steps:
 4. From the top menu of Visual Studio, click **Microsoft.Bing.WebSearch.Samples** for the debug/release version. This runs examples from the BingWebSearch\WebSearchSamples.cs file. 
 
 ### Note: 
-Change TargetFramework in Microsoft.Bing.WebSearch.Samples.csproj to “netcoreapp1.1” if you have .NET Framework version as 2.1.2.
+Change TargetFramework in Microsoft.Bing.WebSearch.Samples.csproj to netcoreapp1.1 if you have .NET Framework version as 2.1.2.
 
-If you have an older version, change the file as follows: 
+If you have an older version: 
 
 **Current**
 ````  
