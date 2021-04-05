@@ -15,7 +15,7 @@ This example illustrates use cases for the the Bing AutoSuggest Search v7. It us
 ### Prerequisites
 
 - Visual Studio 2017. If required, you can download the [free community version](https://www.visualstudio.com/vs/community/).
-- An API key is required to authenticate SDK calls. You can [sign up here](https://portal.azure.com/#cre(ate/microsoft.bingsearch) for the free trial key. This trial key is good for 30 days with 3 calls per second. Or, for production scenarios, [buy an access key]https://portal.azure.com/#create/microsoft.bingsearch). When buying an access key, consider which tier is appropriate for you. More information is available [here](https://docs.microsoft.com/en-us/bing/search-apis/bing-autosuggest/overview). 
+- An API key is required to authenticate SDK calls. You can [sign up here](https://portal.azure.com/#cre(ate/microsoft.bingsearch) for the free trial key. This trial key is good for 30 days with 3 calls per second. Or, for production scenarios, [buy an access key](https://portal.azure.com/#create/microsoft.bingsearch). When buying an access key, consider which tier is appropriate for you. More information is available [here](https://docs.microsoft.com/en-us/bing/search-apis/bing-autosuggest/overview). 
 - .NET Core SDK (with the ability to run .netcore 1.1 apps). You can get .NET Core, Framework, and Runtime from here: https://www.microsoft.com/net/download/. 
 
 ### Quickstart
@@ -30,7 +30,7 @@ To get the Bing AutoSuggest Search sample running locally, follow these steps:
 ### Note: 
 Change TargetFramework in Microsoft.Bing.Autosuggest.Samples.csproj to `netcoreapp1.1` if you have .NET Framework version 2.1.2. 
 
-If your version is older, run:
+If your version is older, change it as follows:
 
 **Current**
 ````  
