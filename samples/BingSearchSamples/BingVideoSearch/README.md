@@ -1,38 +1,36 @@
-# The Bing Video Search SDK Sample
+# The Bing Video Search SDK sample
 
-This sample will show you how to get up and running using the Bing Video Search Nuget package. This example will cover a few usecases and hopefully express best practices for interacting with the data from this API. For more information on the Bing Video Search API v7, you can navigate to: https://docs.microsoft.com/en-us/bing/search-apis/bing-video-search/overview. Exhaustive reference documentation including description of parameters, their values, and supported markets is [here](https://docs.microsoft.com/en-us/bing/search-apis/bing-video-search/overview).
+This sample shows you how to get up and running using the Bing Video Search Nuget package. It covers a few use cases and expresses best practices for interacting with the data from this API. For more information on the Bing Video Search API v7, go to: https://docs.microsoft.com/en-us/bing/search-apis/bing-video-search/overview. Complete reference documentation including descriptions of parameters, their values, and supported markets is available [here](https://docs.microsoft.com/en-us/bing/search-apis/bing-video-search/overview).
 
-If you are looking for amending samples to suit your needs, the single, most important file is VideoSearchSamples.cs. See how you can access this file in the "Quickstart" section below.
+If you want to amend samples to suit your needs, the most important file is VideoSearchSamples.cs. See how you can access this file in the [Quickstart](#quickstart) section below.
 
 ## Features
 
-This sample references the Bing Video Search SDK, which is a stand-alone package for the v7 version of this API. All-in-one package including all the Bing Search APIs will be available in future.
+This sample references the Bing Video Search SDK, which is a stand-alone package for the v7 version of this API. An all-in-one package including all the Bing Search APIs will be available in future.
 
-This example provides sample usecases of the the [Bing Video Search v7](https://github.com/microsoft/bing-search-sdk-for-net/tree/main/samples/BingSearchSamples/BingVideoSearch)
+This example provides sample use cases of the the [Bing Video Search v7](https://github.com/microsoft/bing-search-sdk-for-net/tree/main/samples/BingSearchSamples/BingVideoSearch) using the Bing Video Search Nuget Package at https://www.nuget.org/packages/Microsoft.Bing.Search.VideoSearch/.
 
-* Using the **Bing Video Search Nuget Package** at https://www.nuget.org/packages/Microsoft.Bing.Search.VideoSearch/
-
-## Getting Started
+## Getting started
 
 ### Prerequisites
 
-- Visual Studio 2017. If required, you can download free community version from here: https://www.visualstudio.com/vs/community/.
-- A Bing API key is required to authenticate SDK calls. You can [sign up here](https://portal.azure.com/#create/microsoft.bingsearch) for the **free** trial key. This trial key is good for 30 days with 3 calls per second. **Alternately**, for production scenario, you can buy access key from here: https://portal.azure.com/#create/microsoft.bingsearch or https://aka.ms/bingapisignup. While buying access key you may want to consider which tier is appropriate for you.
-- .NET core SDK (ability to run .netcore 1.1 apps). You can get CORE, Framework, and Runtime from here: https://www.microsoft.com/net/download/. 
+- Visual Studio 2017. If required, you can download the [free community version](https://www.visualstudio.com/vs/community/).
+- A Bing API key is required to authenticate SDK calls. You can [sign up here](https://portal.azure.com/#create/microsoft.bingsearch) for the free trial key. This trial key is good for 30 days with 3 calls per second. Or, for production scenarios, [buy access](https://portal.azure.com/#create/microsoft.bingsearch). When buying access key, consider which tier is appropriate for you.
+- .NET Core SDK (with the ability to run .netcore 1.1 apps). You can get .NET Core, Framework, and Runtime from here: https://www.microsoft.com/net/download/. 
 
 
 ### Quickstart
 
 To get the Bing Video Search sample running locally, follow these steps:
 
-
-1. git clone https://github.com/microsoft/bing-search-sdk-for-net.git
-2. Open bing-search-sdk-for-net\samples\BingSearchSamples\BingVideoSearch\Microsoft.Bing.VideoSearch.Samples.sln from Visual Studio 2017
-3. npm install https://www.nuget.org/packages/Microsoft.Bing.Search.VideoSearch/ from Tools > Nuget Package Manager > Package Manager Console. **Alternately**, you can go to Project > Manage Nuget Packages and search for "Microsoft.Bing.VideoSearch" in the "Browse" tab, and click on "Install".
-4. Click on "Microsoft.Bing.VideoSearch.Samples" for debug/release version from the top of Visual Studio. This will run examples from the **BingVideoSearch\VideoSearchSamples.cs** file. **Alternately** you can build and run solution in separate steps.
+1. Run `git clone https://github.com/microsoft/bing-search-sdk-for-net.git`.
+3. From **Tools > Nuget Package Manager > Package Manager Console**, run `npm install https://www.nuget.org/packages/Microsoft.Bing.Search.VideoSearch/`. Or, go to **Project > Manage Nuget Packages** and search for Microsoft.Bing.VideoSearch under the **Browse** tab, and then click **Install**.
+4. From the top menu of Visual Studio, click **Microsoft.Bing.VideoSearch.Samples** for the debug/release version. This will run examples from the BingVideoSearch\VideoSearchSamples.cs file. 
 
 ### Note: 
-Change TargetFramework in Microsoft.Bing.VideoSearch.Samples.csproj to “netcoreapp1.1” if you have .NET Framework version as 2.1.2. [ Older ] as follows:
+Change TargetFramework in Microsoft.Bing.VideoSearch.Samples.csproj to netcoreapp1.1 if you have .NET Framework version as 2.1.2.
+
+If you have an older version, chang the file as follows:
 
 **Current**
 ````  
@@ -45,4 +43,4 @@ Change TargetFramework in Microsoft.Bing.VideoSearch.Samples.csproj to “netcor
 - [Bing Video Search Reference Document](https://docs.microsoft.com/en-us/bing/search-apis/bing-video-search/overview)
 - [Bing Video Search Dotnet SDK (source code)](https://github.com/microsoft/bing-search-sdk-for-net/tree/main/sdk/VideoSearch) 
 - [Bing Video Search Nuget Package](https://www.nuget.org/packages/Microsoft.Bing.Search.VideoSearch/)
-- Support channels: [Stack Overflow](https://stackoverflow.com/questions/tagged/bing-search)
+- Support channel: [Stack Overflow](https://stackoverflow.com/questions/tagged/bing-search)
