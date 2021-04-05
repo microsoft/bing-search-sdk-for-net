@@ -24,7 +24,7 @@ To get the Bing Custom Image Search Search sample running locally, follow these 
 
 1. Run `git clone https://github.com/microsoft/bing-search-sdk-for-net.git`.
 2. From Visual Studio 2017, open bing-search-sdk-for-net\samples\BingSearchSamples\BingCustomImageSearch\Microsoft.Bing.CustomImageSearch.Samples.sln.
-3. From the **Tools > Nuget Package Manager > Package Manager** console, run `npm install https://www.nuget.org/packages/Microsoft.Bing.Search.CustomImageSearch/`. Or, you can go to **Project > Manage Nuget Packages** and search for Microsoft.Bing.CustomImageSearch under the **Browse** tab, and click **Install**.
+3. From **Tools > Nuget Package Manager > Package Manager Console**, run `npm install https://www.nuget.org/packages/Microsoft.Bing.Search.CustomImageSearch/`. Or, you can go to **Project > Manage Nuget Packages** and search for Microsoft.Bing.CustomImageSearch under the **Browse** tab, and then click **Install**.
 4. From the top menu of Visual Studio, click **Microsoft.Bing.CustomImageSearch.Samples** for the debug/release version. This runs examples from the BingCustomImageSearch\CustomImageSearchSamples.cs file.
 
 ### Note: 
