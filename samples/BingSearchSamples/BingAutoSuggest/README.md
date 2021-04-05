@@ -22,8 +22,8 @@ This example illustrates use cases for the the Bing AutoSuggest Search v7. It us
 
 To get the Bing AutoSuggest Search sample running locally, follow these steps:
 
-1. From a repo on the command line, enter `git clone https://github.com/microsoft/bing-search-sdk-for-net.git`.
-2. Open the project from Visual Studio 2017.
+1. Run `git clone https://github.com/microsoft/bing-search-sdk-for-net.git`.
+2. From Visual Studio 2017, open the project.
 3. From the **Tools > Nuget Package Manager > Package Manager** console, run `npm install https://www.nuget.org/packages/Microsoft.Bing.Search.AutoSuggest/`. Or, go to **Project > Manage Nuget Packages** and search for Microsoft.Azure.CognitiveServices.Search.AutoSuggest under the **Browse** tab, and click **Install**. 
 4. From the Visual Studio top menu, click Microsoft.Bing.Autosuggest.Samples for the debug/release version. This runs examples from the BingAutoSuggest\AutoSuggestSearchSamples.cs file.
 
