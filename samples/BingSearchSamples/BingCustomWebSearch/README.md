@@ -15,7 +15,7 @@ This example provides sample use cases of the [Bing Custom Search v7](https://gi
 ### Prerequisites
 
 - Visual Studio 2017. If required, you can download the [free community version](https://www.visualstudio.com/vs/community/).
-- A Bing API key is required to authenticate SDK calls. You can [sign up here](https://portal.azure.com/#create/microsoft.bingsearch) for the free trial key. This trial key is good for 30 days with 3 calls per second. Or, for production scenarios, you can [buy an access key](https://portal.azure.com/#create/microsoft.bingsearch) or https://aka.ms/bingapisignup. When buying access key, consider which tier is appropriate for you.
+- A Bing API key is required to authenticate SDK calls. You can [sign up here](https://portal.azure.com/#create/microsoft.bingsearch) for the free trial key. This trial key is good for 30 days with 3 calls per second. Or, for production scenarios, you can [buy an access key](https://portal.azure.com/#create/microsoft.bingsearch). When buying access key, consider which tier is appropriate for you.
 - .NET Core SDK (with the ability to run .netcore 1.1 apps). You can get Core, Framework, and Runtime from here: https://www.microsoft.com/net/download/. 
 
 ### Quickstart
@@ -24,13 +24,13 @@ To get the Bing Custom Web Search Search sample running locally, follow these st
 
 1. Run `git clone https://github.com/microsoft/bing-search-sdk-for-net.git`.
 2. From Visual Studio 2017, open bing-search-sdk-for-net\samples\BingSearchSamples\BingCustomWebSearch\Microsoft.Bing.CustomWebSearch.Samples.sln.
-3. From **Tools > Nuget Package Manager > Package Manager** console, run `npm install https://www.nuget.org/packages/Microsoft.Bing.Search.CustomWebSearch/`. Or, go to **Project > Manage Nuget Packages** and search for Microsoft.Bing.CustomWebSearch under the "**Browse** tab, and click **Install"**
+3. From **Tools > Nuget Package Manager > Package Manager Console**, run `npm install https://www.nuget.org/packages/Microsoft.Bing.Search.CustomWebSearch/`. Or, go to **Project > Manage Nuget Packages** and search for Microsoft.Bing.CustomWebSearch under the **Browse** tab, and click **Install**
 4. From the top menu of Visual Studio, click Microsoft.Bing.CustomWebSearch.Samples. This runs examples from the BingCustomSearch\CustomSearchSamples.cs file.
 
 ### Note: 
 Change TargetFramework in Microsoft.Bing.CustomWebSearch.Samples.csproj to netcoreapp1.1 if you have .NET Framework version as 2.1.2.
 
-For older versions, update it as follows:
+For older versions:
 
 **Current**
 ````  
