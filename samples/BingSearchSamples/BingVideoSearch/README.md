@@ -30,7 +30,7 @@ To get the Bing Video Search sample running locally, follow these steps:
 ### Note: 
 Change TargetFramework in Microsoft.Bing.VideoSearch.Samples.csproj to netcoreapp1.1 if you have .NET Framework version as 2.1.2.
 
-If you have an older version, chang the file as follows:
+If you have an older version:
 
 **Current**
 ````  
