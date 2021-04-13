@@ -1,22 +1,21 @@
 # Project
 
-# Bing Search SDK for.NET
+# Bing Search SDK for .NET
 
 
 
-This repository is for active development of the Bing Api SDK for .NET. 
+This repository is for active development of the Bing API SDK for .NET. 
 
 ## Getting started
 
 To get started with a library, see the README.md file located in the library's project folder. You can find these library folders grouped by service in the /sdk directory.
 
-For tutorials, samples, quick starts, and other documentation, go to [Bing Search .NET SDK Repo](https://github.com/microsoft/bing-search-sdk-for-net)
-
+For tutorials, samples, quickstarts, and other documentation, go to [Bing Search .NET SDK Repo](https://github.com/microsoft/bing-search-sdk-for-net).
 
 ## Need help?
 
-* For reference documentation visit the [Bing API Reference](https://docs.microsoft.com/en-us/bing/search-apis/).
-* For tutorials, samples, quick starts, and other documentation, go to [Bing Search .NET SDK Repo](https://github.com/microsoft/bing-search-sdk-for-net).
+* For reference documentation, visit the [Bing API Reference](https://docs.microsoft.com/en-us/bing/search-apis/).
+* For tutorials, samples, quickstarts, and other documentation, go to [Bing Search .NET SDK Repo](https://github.com/microsoft/bing-search-sdk-for-net).
 * File an issue via [Github Issues](https://github.com/microsoft/bing-search-sdk-for-net/issues).
 
 ## Navigating the repository
@@ -24,7 +23,6 @@ For tutorials, samples, quick starts, and other documentation, go to [Bing Searc
 ### Master branch
 
 The master branch has the most recent code with new features and bug fixes. 
-
 
 ## Contributing
 
